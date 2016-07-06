@@ -13,6 +13,7 @@ const int N = 60;
 int graph[N][N], vis[N][N];
 int cnt[N*N];
 
+//遍历连通房间的时候用vis存储房间编号
 void dfs(int i, int j, int roomNum)
 {
     if(vis[i][j] == 0)
